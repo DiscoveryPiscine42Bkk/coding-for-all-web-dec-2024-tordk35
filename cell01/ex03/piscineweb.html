@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piscine Web</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 3em;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 48%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block; 
+            max-width: 48%;       
+        }
+
+        a img {
+            display: block;     
+            width: 100%;         
+            max-width: 100%;      
+        }
+    </style>
+</head>
+<body>
+    <div>Piscine Web</div>
+
+    <div class="image-container">
+        <!-- First Image with a link -->
+        <a href="https://www.youtube.com/watch?v=INscMGmhmX4" target="_blank">
+            <img src="https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65f143538c242942ee1aff53_cool%20landscapes-p-1080.webp" alt="Image 1">
+        </a>
+
+        <!-- Second Image -->
+        <img src="https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65eaa58b05a6eaddafacdb66_most%20beautiful%20landscapes%20in%20the%20world.webp" alt="Image 2">
+    </div>
+</body>
+</html>
